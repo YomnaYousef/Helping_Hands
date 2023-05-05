@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Helping Hands|Donate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Helping Hands</h1>
+      <nav>
+        <ul>
+           <li><a href="index.html">Home</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="request.html">Request</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="donate-form">
+        <h2>Donate Items</h2>
+        <img src="images/don.jpg" alt="household donation" height="400" width="800" >
+          
+        <form>
+          <label for="item-category">Category</label>
+          <select id="item-category" name="item-category" required>
+            <option value="">--Select Category--</option>
+            <option value="Food">Food</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Household">Household</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Other">Other</option>
+          </select><br>
+          <label for="item-name">Item Name</label>
+          <input type="text" id="item-name" name="item-name" placeholder="Rice,T-shirt,TV,......" required><br>
+
+          <label for="item-description">Description</label><br>
+          <textarea id="item-description" name="item-description" rows="4" cols="50" placeholder="Write a description of the item like its condition, validity, method of use, etc..."></textarea><br>
+
+          <label for="item-image">Image</label>
+          <input type="file" id="item-image" name="item-image"><br>
+
+          <input type="submit" value="Donate">
+        </form>
+      </section>
+      <section id="items-list">
+        <h2>Available Items</h2>
+        <ul id="items">
+          <!-- Items added dynamically using JavaScript -->
+        </ul>
+        <img src="images/clo.webp" alt="household donation" height="300" >
+        <img src="images/do.jpg" alt="household donation" height="300" >
+        <img src="images/fur.jpg" alt="household donation" height="300" >
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
